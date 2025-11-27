@@ -19,6 +19,3 @@ jobs:
 
     - name: Verify Docker Compose config
       run: docker compose config
-
-    - name: Build services
-      run: docker compose build

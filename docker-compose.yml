@@ -12,7 +12,8 @@ services:
 
   backend:
     build:
-      context: ./quiz-backend
+      context: .
+      dockerfile: Dockerfile2
     ports:
       - "8081:8081"
     restart: unless-stopped
@@ -26,7 +27,8 @@ services:
 
   frontend:
     build:
-      context: ./quiz-frontend
+      context: .
+      dockerfile: Dockerfile1
     ports:
       - "3000:80"
     depends_on:
